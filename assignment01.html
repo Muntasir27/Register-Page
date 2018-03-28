@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CWD4041 - ASSIGNMENT 1</title>
+    <!-- 	meta tags		-->
+    <meta name="author" content="Muhammad" />
+    <meta name="description" content="CWMD2601 - JavaScript - Samples" />
+    <meta name="keywords" content="Durham, JavaScript, CWMD2601, samples" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--	external stylesheets	-->
+    <link rel="stylesheet" type="text/css" href="./css/assignment01.css" />
+</head>
+
+<body>
+    <h1>CWD4041 - ASSIGNMENT 1 - Sign In Form</h1>
+
+    <fieldset id="wrapper">
+        <legend id="firstLegend">SIGN IN</legend>
+
+        <div id="signDiv">
+            <label>ID: </label>
+            <input type="text" class="inputs" id="myId"><br><br>
+
+            <label>PASSWORD: </label>
+            <input type="text" class="inputs" id="myPasswrd"><br>
+
+            <div class="myBtns">
+                <br>
+                <button id="signIn">Sign In</button>
+                <br>
+                <button id="regPage">Not a member? Register now!</button><br>
+            </div>
+        </div>
+
+        <div id="registerDiv">
+            <label>ID: </label>
+            <input type="text" class="inputs" id="regId"><br><br>
+
+            <label>PASSWORD: </label>
+            <input type="text" class="inputs" id="regPasswrd"><br><br>
+
+            <label>eMAIL: </label>
+            <input type="text" class="inputs" id="regMail"><br><br>
+
+            <div id="captcha">
+                <label id="labelCaptcha">ENTER CODE TO COMPLETE REGISTRATION</label><br>
+                <input type="text" class="inputs" id="regCaptcha"><br>
+                <canvas id="myCanvas">
+                Your browser does not support the canvas element.
+                </canvas>
+            </div>
+
+            <div class="myBtns">
+                <br>
+                <button id="join">Join</button>
+                <br>
+                <button id="cancel">Cancel</button><br>
+            </div>
+
+        </div>
+    </fieldset>
+
+
+
+    <fieldset  id="showResult">
+        <legend id="secondLegend">REGISTERED USERS</legend>
+        <div id ="output"></div>
+    </fieldset>
+
+
+    <!--  external javascript  -->
+    <script src="./js/assignment01.js"></script>
+</body>
+
+</html>
